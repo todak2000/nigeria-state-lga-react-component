@@ -13,14 +13,21 @@ This library which allows developers to quickly fetch data about Nigerian geogra
 - display LGA data based on state using the `LGAWidget` compoennt.
   While you can use both components as standalone, however, the `LGAWidget` requires that the `state` prop be given a string value.
 
+![ezgif com-optimize](https://user-images.githubusercontent.com/26861798/236657359-49edcfbf-1ca2-437e-ae5c-209a11160031.gif)
+
+
+## Demo
+https://nigeria-state-lga-react-component.todak2000.repl.co/
+
 ## Quickstart
 
 Install this library:
 
 ```
-npm i @todak2000/nigeria-state-lga-component
+npm i @todak2000/nigeria-state-lga-react-component
 # or
-yarn add @todak2000/nigeria-state-lga-component
+yarn add @todak2000/nigeria-state-lga-react-component
+
 ```
 
 Then, import and use any of the functionalities you might require:
@@ -129,7 +136,7 @@ function SampleApp() {
         />
         <p>
           States Selected: <br />
-          {stateMultiple.map((state: string) => {
+          {stateMultiple.map((state) => {
             return (
               <span>
                 {state}
@@ -177,7 +184,7 @@ function SampleApp() {
         />
         <p>
           LGAs Selected: <br />
-          {LGAMultiple.map((lga: string) => {
+          {LGAMultiple.map((lga) => {
             return (
               <span>
                 {lga}
@@ -220,7 +227,7 @@ function SampleApp() {
             <div key={id}>
               <h4>{state}</h4>
               <ul style={{ overflowY: "auto", height: "80vh" }}>
-                {lga.map((lgaName: string) => (
+                {lga.map((lgaName) => (
                   <li key={lgaName}>{lgaName}</li>
                 ))}
               </ul>
