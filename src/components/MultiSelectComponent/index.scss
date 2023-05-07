@@ -1,0 +1,103 @@
+.defaultSelectClass{
+    font-family: 'Roboto', sans-serif;
+    position:relative;
+    width:300px;
+    // border: 1px solid black;
+
+    .defaultDropdownClass{
+        border:solid 1px #767676;
+        
+        font-size:14px;
+        padding:7px 10px;
+        background-color: rgb(249, 249, 249);
+        display:flex;
+        margin-bottom:5px;
+        justify-content: space-between;
+        align-items: center;
+
+        > img {
+            height:18px;
+        }
+    }
+    .closeContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        .closeItem{
+            cursor: pointer;
+            color:#F44912;
+            margin: 3px 5px 0 0;
+        }
+    }
+    .defaultSearchContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: "space-between";
+        border: 0;
+        padding:7px;
+        margin: 3px 0;
+        align-items: center;
+        background-color: #eee;
+        .defaulfSearchInput{
+            width:100%;
+            margin-left:5px;
+            height:20px;
+            background-color: transparent;
+            border:0;
+            outline: 0;
+        } 
+    }
+    .selectedItems {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .selectedSpan{
+        padding:5px 10px;
+        background-color: rgb(199, 213, 246);
+        margin: 3px;
+        border-radius: 30px;
+        display: flex;
+        font-size: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .closeItem{
+            cursor: pointer;
+            color:#000000;
+            margin-left: 5px;
+            font-size:13px;
+        }
+    }
+    .defaulfOptionsContainerClass{
+        position: absolute;
+        box-sizing: border-box;
+        left:0;
+        width:100%;
+        list-style: none;
+        padding-left:0px;
+        border:solid 1px #eee;
+        padding:5px 0px;
+        height: 100px;
+        overflow-y: auto;
+        background-color: #f9f9f9;
+    }
+
+    .defaulfOptionsClass{
+        display:flex;
+        align-items: center;
+        padding:6px 10px;
+        cursor:pointer;
+
+        &:hover{
+            background-color: #eee;
+        }
+        
+        &-checkbox{
+            margin-right:6px;
+        }
+    }
+}

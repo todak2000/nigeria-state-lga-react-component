@@ -1,0 +1,68 @@
+{
+  "name": "@todak2000/nigeria-state-lga-react-component",
+  "version": "1.0.6-b.0",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "files": [
+    "build"
+  ],
+  "types": "build/index.d.ts",
+  "description": "This library which allows developers to quickly fetch data about Nigerian geographical regions, states and Local Government Areas (LGA). It provides a customisable component which can be used to display the fetched data, allowing developers to save time and energy in coding.",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"No test specified\"",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todak2000/nigeria-state-lga-react-component.git"
+  },
+  "keywords": [
+    "React",
+    "Device",
+    "Location",
+    "Unique Visitor"
+  ],
+  "author": "Daniel Olagunju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/todak2000/nigeria-state-lga-react-component/issues"
+  },
+  "homepage": "https://github.com/todak2000/nigeria-state-lga-react-component#readme",
+  "peerDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^16.9.14",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react-app": "^10.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "rollup": "^2.56.3",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "np": "^7.6.3",
+    "postcss": "^8",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.8.1",
+    "react-uuid": "^2.0.0",
+    "tslib": "^2.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
