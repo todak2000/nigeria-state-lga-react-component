@@ -91,7 +91,7 @@ import { SlClose } from 'react-icons/sl'
                     const isSelected = selected.includes(state);
                     return (
                         <li key={id} className={`${optionsClass}`} style={optionsStyle} onClick={() => onChange(state)}>
-                            <input type="checkbox" checked={isSelected} readOnly className="mr-6"></input>
+                            <input type="checkbox" checked={isSelected} readOnly className="checkbox"></input>
                             <span>{state}</span>
                         </li>
                     )
@@ -101,7 +101,7 @@ import { SlClose } from 'react-icons/sl'
                     
                     return (
                         <li key={index} className={`${optionsClass}`} style={optionsStyle} onClick={() => onChange(item)}>
-                            <input type="checkbox" checked={isSelected} readOnly className="mr-6"></input>
+                            <input type="checkbox" checked={isSelected} readOnly className="checkbox"></input>
                             <span>{item}</span>
                         </li>
                     )

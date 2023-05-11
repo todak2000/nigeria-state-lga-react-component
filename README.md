@@ -80,7 +80,7 @@ function SampleApp() {
         <StateWidget
           setState={setState}
           className="bg-select"
-          style={{ padding: 5, width: "100%" }}
+          selectStyle={{ padding: 5}}
         />
         <p>State Selected: {state}</p>
 
@@ -90,9 +90,7 @@ function SampleApp() {
               state={state}
               setLGAState={setLGA}
               className="bg-select"
-              style={{
-                padding: 5,
-              }}
+              selectStyle={{ padding: 5}}
             />
             <p>LGA Selected: {LGA}</p>
           </>
@@ -112,7 +110,7 @@ function SampleApp() {
         <StateWidget
           setState={setStateAlone}
           className="bg-select"
-          style={{ padding: 5, width: "100%" }}
+          selectStyle={{ padding: 5}}
         />
         <p>State Selected: {stateAlone}</p>
       </div>
@@ -132,7 +130,7 @@ function SampleApp() {
           isMultipleSelect
           setState={setStateMultiple}
           className="bg-select"
-          style={{ padding: 5 }}
+          selectStyle={{ padding: 5}}
         />
         <p>
           States Selected: <br />
@@ -160,7 +158,7 @@ function SampleApp() {
         <LGAWidget
           setLGAState={setLGAAlone}
           className="bg-select"
-          style={{ padding: 5, width: "100%" }}
+          selectStyle={{ padding: 5}}
         />
         <p>LGA Selected: {LGAAlone}</p>
       </div>
@@ -180,7 +178,7 @@ function SampleApp() {
           setLGAState={setLGAMultiple}
           isMultipleSelect
           className="bg-select"
-          style={{ padding: 5, width: "100%" }}
+          selectStyle={{ padding: 5}}
         />
         <p>
           LGAs Selected: <br />
@@ -245,7 +243,8 @@ export default SampleApp;
 ```
 
 ## API
-This is a list of props required 
+This is a list of props required/optional. It is important to note that depending if `isMultipleSelect` is `true` or `false`, developer might want to customize the Select/Option component. 
+
 | **Property**            	| **Description**                                                                        	| **DefaultValue** 	| **Type** 	| **Component Type**                        	| **Compulsory** 	|
 |-------------------------	|----------------------------------------------------------------------------------------	|------------------	|----------	|-------------------------------------------	|----------------	|
 | `setState`              	| Function that allows you to update the selected `state` value                          	| `null`           	| function 	| `StateWidget`                             	| Yes            	|
@@ -268,8 +267,13 @@ This is a list of props required
 | `searchContainerClass`  	| Search Container class attribute - pass your customized classes in here                	| `defaultClass`   	| string   	| All                                       	| optional       	|
 | `searchContainerStyle`  	| Search Container style attribute                                                       	| `defaultStyle`   	| object   	| All                                       	| optional       	|
 
-However, depending if `isMultipleSelect` is `true` or `false`, developer might want to customize the Select/Option component. find the table below showing list of additional props depending on the type of Select component used.
 
-## Author
 
-[Daniel Olagunju](https://github.com/todak2000)
+## Collaborators
+- [Bolaji Tijani](https://pipeline.talentql.com/) - Product Manager
+- [Keefayah Kemi](https://pipeline.talentql.com/) - Product Designer
+- [Daniel Olagunju](https://github.com/todak2000) - Developer
+
+## Acknowledgement
+- [Charles Odili](https://github.com/chalu)
+- [AltSchool TalentQL Pipeline Team](https://pipeline.talentql.com/)
